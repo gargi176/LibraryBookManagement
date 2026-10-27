@@ -42,7 +42,7 @@ def add_book():
         connection.commit()
         flash("Book added successfully!")
     except Exception:
-        flash("A book with this ISBN already exists.")
+        flash("A  with this ISBN already exists.")
     finally:
         connection.close()
 
