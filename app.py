@@ -29,7 +29,7 @@ def add_book():
     author = request.form.get("author", "").strip()
 
     if not isbn or not title or not author:
-        flash("Please fill in all book details.")
+        flash("Please fill in all the book details.")
         return redirect(url_for("home"))
 
     connection = get_connection()
